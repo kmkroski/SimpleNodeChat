@@ -1,0 +1,9 @@
+{
+    "name": "SimpleChat",
+    "description": "A simple project demonstrating Node.js and socket.IO",
+    "author": "K. M. Kroski <kroski@live.com>",
+    "dependencies": {
+        "express": "3.*",
+        "socket.io": "*"
+    }
+}

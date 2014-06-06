@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+
+    <title>Simple Chat</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="panel" id="rooms">
+        <span class="title">Rooms</span>
+        <span class="add">+</span>
+        <div class="scrollable" id="rooms_list"></div>
+    </div>
+
+    <div class="panel" id="users">
+        <span class="title">Users</span>
+        <div class="scrollable" id="users_list"></div>
+    </div>
+
+    <div class="panel" id="chat">
+        <span class="title" id="chat_title">Chat</span>
+        <div class="scrollable" id="chat_log"></div>
+    </div>
+
+    <form class="panel" id="send">
+        <div>
+            <input type="text" id="send_text" placeholder="What's Up?" />
+        </div>
+        <input type="submit" value="Send" />
+    </form>
+
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+</body>
+</html>

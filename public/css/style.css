@@ -1,0 +1,115 @@
+html, body {
+    background: #fafafa;
+    font: 400 14px/17px 'Open Sans', sans-serif;
+}
+
+.right { float: right; }
+
+.panel {
+    position: absolute;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    background: #fff;
+}
+.panel > .title {
+    position: absolute;
+    top: 5px; left: 10px;
+    font: 300 16px/20px 'Open Sans', sans-serif;
+}
+
+.panel > .add {
+    position: absolute;
+    top: 5px; right: 10px;
+    font: bolder 24px/20px 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+.panel > .add:hover { color: #999; }
+
+.panel > .scrollable {
+    position: absolute;
+    top: 30px; left: 10px; bottom: 10px; right: 10px;
+    overflow-y: auto;
+}
+
+#rooms {
+    width: 180px;
+    top: 10px; left: 10px; bottom: 10px;
+}
+
+.room {
+    margin: 3px 0;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+.room.active { background: #DDD; }
+
+.room > .name { cursor: pointer; }
+.room.unread > .name {
+    font-weight: bold;
+    color: #0C0;
+}
+
+.room > .quit {
+    font: bolder 16px/14px 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+.room > span:hover { color: #999; }
+
+#users {
+    width: 180px;
+    top: 10px; right: 10px; bottom: 10px;
+}
+
+.user { margin: 1px 0; }
+
+#chat {
+    top: 10px; left: 200px; bottom: 60px; right: 200px;
+}
+
+#chat_log > .message {
+    width: 100%;
+    margin: 2px 0;
+    padding: 4px 8px 6px;
+    background: #FAFAFA;
+}
+#chat_log > .message.me { background: #f3fff3; }
+
+#chat_log > .message > .name,
+#chat_log > .message > .time {
+    display: block;
+    font-size: 12px;
+    color: #777;
+}
+
+#chat_log > .message > .time { float: right; }
+
+#chat_log > .message > .text { font: 400 16px/20px 'Open Sans', sans-serif; }
+
+#send {
+    height: 40px;
+    left: 200px; bottom: 10px; right: 200px;
+}
+
+#send > div {
+    position: absolute;
+    top: 5px; left: 10px; bottom: 5px; right: 100px;
+}
+
+#send > div > input[type=text] {
+    margin: 0; padding: 0;
+    width: 100%; height: 100%;
+    font: 400 16px/20px 'Open Sans', sans-serif;
+
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+#send > input[type=submit] {
+    position: absolute;
+    top: 10px; right: 10px;
+    width: 80px; height: 30px;
+    cursor: pointer;
+}
