@@ -1,9 +1,13 @@
 {
-    "name": "SimpleChat",
-    "description": "A simple project demonstrating Node.js and socket.IO",
+    "name": "SimpleNodeChat",
+    "description": "A demo chat web app using Node.js and sockets.IO",
     "author": "K. M. Kroski <kroski@live.com>",
     "dependencies": {
         "express": "3.*",
         "socket.io": "*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kmkroski/SimpleNodeChat"
     }
 }
